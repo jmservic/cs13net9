@@ -1,11 +1,17 @@
 ﻿using System.Diagnostics; // To use Debug and Trace
+using System.Text;
 using Microsoft.Extensions.Configuration; // To use ConfigurationBuilder.
 
 string logPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.DesktopDirectory), "log.txt");
 
 Console.WriteLine($"Writing to: {logPath}");
 
-TextWriterTraceListener logFile = new(File.CreateText(logPath));
+FileStream logStream = File.OpenWrite(logPath);
+logStream.Seek(0, SeekOrigin.End);
+//logStream.Write(Encoding.ASCII.GetBytes(Environment.NewLine));
+
+TextWriterTraceListener logFile = new(logStream);
+
 
 Trace.Listeners.Add(logFile);
 
