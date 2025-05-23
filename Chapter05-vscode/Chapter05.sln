@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PacktLibraryNet2", "PacktLi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PeopleApp", "PeopleApp\PeopleApp.csproj", "{265BF992-CC15-4128-8C12-C00DD0F5034D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PacktLibraryModern", "PacktLibraryModern\PacktLibraryModern.csproj", "{9F04012E-2CDC-42B7-B95C-64C768547ADA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -41,6 +43,18 @@ Global
 		{265BF992-CC15-4128-8C12-C00DD0F5034D}.Release|x64.Build.0 = Release|Any CPU
 		{265BF992-CC15-4128-8C12-C00DD0F5034D}.Release|x86.ActiveCfg = Release|Any CPU
 		{265BF992-CC15-4128-8C12-C00DD0F5034D}.Release|x86.Build.0 = Release|Any CPU
+		{9F04012E-2CDC-42B7-B95C-64C768547ADA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F04012E-2CDC-42B7-B95C-64C768547ADA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F04012E-2CDC-42B7-B95C-64C768547ADA}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{9F04012E-2CDC-42B7-B95C-64C768547ADA}.Debug|x64.Build.0 = Debug|Any CPU
+		{9F04012E-2CDC-42B7-B95C-64C768547ADA}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{9F04012E-2CDC-42B7-B95C-64C768547ADA}.Debug|x86.Build.0 = Debug|Any CPU
+		{9F04012E-2CDC-42B7-B95C-64C768547ADA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F04012E-2CDC-42B7-B95C-64C768547ADA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F04012E-2CDC-42B7-B95C-64C768547ADA}.Release|x64.ActiveCfg = Release|Any CPU
+		{9F04012E-2CDC-42B7-B95C-64C768547ADA}.Release|x64.Build.0 = Release|Any CPU
+		{9F04012E-2CDC-42B7-B95C-64C768547ADA}.Release|x86.ActiveCfg = Release|Any CPU
+		{9F04012E-2CDC-42B7-B95C-64C768547ADA}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
