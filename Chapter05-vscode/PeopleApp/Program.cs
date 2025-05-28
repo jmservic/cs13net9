@@ -1,5 +1,5 @@
 ﻿using Packt.Shared; // To use Person.
-
+using Fruit = (string Name, int Number); // Aliasing a tuple type.
 ConfigureConsole(); // Sets current culture to US English.
 // Alternatives:
 // ConfigureConsole(use ComputerCulture: true); // Use your culture.
@@ -173,4 +173,64 @@ WriteLine($"After: e={e}, f={f}, g={g}, h={h}");
 bob.ParamsParameter("Sum using commas", 3, 6, 1, 2);
 bob.ParamsParameter("Sum using collection expression", [3, 6, 1, 2]);
 bob.ParamsParameter("Sum (empty)");
+#endregion
+
+#region Combining multiple returned values using tuples
+(string, int) fruit = bob.GetFruit();
+WriteLine($"{fruit.Item1}, {fruit.Item2} there are.");
+#endregion
+
+#region Naming the fields of a tuple
+// Without an aliased tuple type
+//var fruitNamed = bob.GetNamedFruit();
+
+// With an aliased tuple type.
+Fruit fruitNamed = bob.GetNamedFruit();
+
+WriteLine($"There are {fruitNamed.Number} {fruitNamed.Name}.");
+
+var thing1 = ("Neville", 4);
+WriteLine($"{thing1.Item1} has {thing1.Item2} children.");
+
+var thing2 = (bob.Name, bob.Children.Count);
+WriteLine($"{thing2.Name} has {thing2.Count} children.");
+#endregion
+
+#region Deconstructing tuples
+(string fruitName, int fruitNumber) = bob.GetFruit();
+WriteLine($"Deconstructed tuple: {fruitName}, {fruitNumber}");
+#endregion
+
+#region Deconstructing other types using tuples.
+var (name1, dob1) = bob; // Implicitly calls the Deconstruct method.
+WriteLine($"Deconstructed person: {name1}, {dob1}");
+
+var (name2, dob2, fav2) = bob;
+WriteLine($"Deconstructed person: {name2}, {dob2}, {fav2}");
+#endregion
+
+#region Implementing functionality using local functions.
+// Change to -1 to make the exception handling code execute.
+int number = 5;
+
+try
+{
+    WriteLine($"{number}! is {Person.Factorial(number)}.");
+}
+catch (Exception ex)
+{
+    WriteLine($"{ex.GetType()} says {ex.Message} number was {number}.");
+}
+#endregion
+
+#region Controlling access with properties and indexes
+Person sam = new()
+{
+    Name = "Sam",
+    Born = new(1969, 6, 25, 0, 0, 0, TimeSpan.Zero)
+};
+
+WriteLine(sam.Origin);
+WriteLine(sam.Greeting);
+WriteLine(sam.Age);
 #endregion

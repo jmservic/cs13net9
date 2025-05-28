@@ -1,6 +1,6 @@
 ﻿namespace Packt.Shared;
 
-public class Person : Object
+public partial class Person : Object
 {
     #region Fields: Data or state for this person.
 
@@ -102,4 +102,40 @@ public class Person : Object
     }
     #endregion
 
+    // Method that returns a tuple with named fields.
+    public (string Name, int Number) GetNamedFruit()
+    {
+        return (Name: "Apples", Number: 5);
+    }
+
+    // Deconstructors: Break down this object into parts.
+
+    public void Deconstruct(out string? name, out DateTimeOffset dob)
+    {
+        name = Name;
+        dob = Born;
+    }
+
+    public void Deconstruct(out string? name, out DateTimeOffset dob, out WondersOfTheAncientWorld fav)
+    {
+        name = Name;
+        dob = Born;
+        fav = FavoriteAncientWonder;
+    }
+
+    // Method with a local function
+    public static int Factorial(int number)
+    {
+        if (number < 0)
+        {
+            throw new ArgumentException($"{nameof(number)} cannot be less than zero.");
+        }
+        return localFactorial(number);
+
+        int localFactorial(int localNumber) // Local function.
+        {
+            if (localNumber == 0) return 1;
+            return localNumber * localFactorial(localNumber - 1);
+        }
+    }
 }
