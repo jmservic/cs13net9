@@ -33,6 +33,7 @@ WriteLine(format: "{0} was born on {1:d}.", // Long date.
     arg0: alice.Name, arg1: alice.Born);
 
 bob.FavoriteAncientWonder = WondersOfTheAncientWorld.StatueOfZeusAtOlympia;
+//bob.FavoriteAncientWonder = (WondersOfTheAncientWorld)128;
 
 WriteLine(
     format: "{0}'s favorite wonder is {1}. Its integer is {2}.",
@@ -233,4 +234,60 @@ Person sam = new()
 WriteLine(sam.Origin);
 WriteLine(sam.Greeting);
 WriteLine(sam.Age);
+
+sam.FavoriteIceCream = "Chocolate Fudge";
+WriteLine($"Sam's favorite ice-cream flavor is {sam.FavoriteIceCream}.");
+
+string color = "Red";
+
+try
+{
+    sam.FavoritePrimaryColor = color;
+    WriteLine($"Sam's favorite primary color is {sam.FavoritePrimaryColor}.");
+}
+catch (Exception ex)
+{
+    WriteLine("Tried to set {0} to '{1}': {2}",
+    nameof(sam.FavoritePrimaryColor), color, ex.Message);
+}
+
+sam.Children.Add(new() { Name = "Charlie", Born = new(2010, 3, 18, 0, 0, 0, TimeSpan.Zero) });
+sam.Children.Add(new() { Name = "Ella", Born = new(2020, 12, 24, 0, 0, 0, TimeSpan.Zero) });
+
+// Get using Children list.
+WriteLine($"Sam's first child is {sam.Children[0].Name}.");
+WriteLine($"Sam's second child is {sam.Children[1].Name}.");
+
+// Get using the int indexer.
+WriteLine($"Sam's first child is {sam[0].Name}.");
+WriteLine($"Sam's second child is {sam[1].Name}.");
+
+// Get using the string indexer.
+WriteLine($"Sam's child named Ella is {sam["Ella"].Age} years old.");
+#endregion
+
+#region Pattern matching with objects
+// An array containing a mix of passenger types.
+Passenger[] passengers = {
+    new FirstClassPassenger { AirMiles = 1_419, Name = "Suman" },
+    new FirstClassPassenger { AirMiles = 16_562, Name = "Lucy" },
+    new BusinessClassPassenger { Name = "Janice" },
+    new CoachClassPassenger { CarryOnKG = 25.7, Name = "Dave" },
+    new CoachClassPassenger { CarryOnKG = 0, Name = "Amit" },
+};
+
+foreach (Passenger passenger in passengers)
+{
+    decimal flightCost = passenger switch
+    {
+        FirstClassPassenger p when p.AirMiles > 35_000 => 1_500M,
+        FirstClassPassenger p when p.AirMiles > 15_000 => 1_750M,
+        FirstClassPassenger _ => 2_000M,
+        BusinessClassPassenger _ => 1_000M,
+        CoachClassPassenger p when p.CarryOnKG < 10.0 => 500M,
+        CoachClassPassenger _ => 650M,
+        _ => 800M
+    };
+    WriteLine($"Flight costs {flightCost:C} for {passenger}");
+}
 #endregion
