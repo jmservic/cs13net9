@@ -280,9 +280,22 @@ foreach (Passenger passenger in passengers)
 {
     decimal flightCost = passenger switch
     {
+        /* C# 8 syntax
         FirstClassPassenger p when p.AirMiles > 35_000 => 1_500M,
         FirstClassPassenger p when p.AirMiles > 15_000 => 1_750M,
-        FirstClassPassenger _ => 2_000M,
+        FirstClassPassenger _ => 2_000M, */
+        // C# 9 or later syntax
+        FirstClassPassenger p => p.AirMiles switch
+        {
+            > 35_000 => 1_500M,
+            > 15_000 => 1_750M,
+            _ => 2000M
+        },
+        /* Could also do the following
+        FirstClassPassenger { AirMiles: > 35000 } => 1500M,
+        FirstClassPassenger { AirMiles: > 15000 } => 1750M,
+        FirstClassPassenger => 2000M,
+        */
         BusinessClassPassenger _ => 1_000M,
         CoachClassPassenger p when p.CarryOnKG < 10.0 => 500M,
         CoachClassPassenger _ => 650M,
@@ -290,4 +303,70 @@ foreach (Passenger passenger in passengers)
     };
     WriteLine($"Flight costs {flightCost:C} for {passenger}");
 }
+#endregion
+
+#region Working with record types
+ImmutablePerson jeff = new()
+{
+    FirstName = "Jeff",
+    LastName = "Winger"
+};
+//jeff.FirstName = "Geoff";
+
+ImmutableVehicle car = new()
+{
+    Brand = "Mazda MX-5 RF",
+    Color = "Soul Red Crystal Metallic",
+    Wheels = 4
+};
+
+ImmutableVehicle repaintedCar = car with { Color = "Polymetal Grey Metallic" };
+
+WriteLine($"Original car color was {car.Color}");
+WriteLine($"New car color is {repaintedCar.Color}");
+
+AnimalClass ac1 = new() { Name = "Rex" };
+AnimalClass ac2 = new() { Name = "Rex" };
+
+WriteLine($"ac1 == ac2: {ac1 == ac2}");
+
+AnimalRecord ar1 = new() { Name = "Rex" };
+AnimalRecord ar2 = new() { Name = "Rex" };
+
+WriteLine($"ar1 == ar2: {ar1 == ar2}");
+
+int number1 = 3;
+int number2 = 3;
+WriteLine($"number 1: {number1}, number2: {number2}");
+WriteLine($"number1 == number2: {number1 == number2}");
+
+Person p1 = new() { Name = "Kevin" };
+Person p2 = new() { Name = "Kevin" };
+WriteLine($"p1: {p1}, p2: {p2}");
+WriteLine($"p1.Name: {p1.Name}, p2.Name: {p2.Name}");
+WriteLine($"p1 == p2: {p1 == p2}");
+
+Person p3 = p1;
+WriteLine($"p3: {p3}");
+WriteLine($"p3.Name: {p3.Name}");
+WriteLine($"p1 == p3: {p1 == p3}");
+
+// string is the only class reference type implemented to act like a value type for equality.
+WriteLine($"p1.Name: {p1.Name}, p2.Name: {p2.Name}");
+WriteLine($"p1.Name == p2.Name: {p1.Name == p2.Name}");
+
+ImmutableAnimal oscar = new("Oscar", "Labrador");
+var (who, what) = oscar;
+WriteLine($"{who} is a {what}.");
+#endregion
+
+#region Defining a primary constructor for a class
+Headset vp = new("Apple", "Vision Pro");
+WriteLine($"{vp.ProductName} is made by {vp.Manufacturer}.");
+
+Headset holo = new();
+WriteLine($"{holo.ProductName} is made by {holo.Manufacturer}.");
+
+Headset mq = new() { Manufacturer = "Meta", ProductName = "Quest 3" };
+WriteLine($"{mq.ProductName} is made by {mq.Manufacturer}.");
 #endregion
