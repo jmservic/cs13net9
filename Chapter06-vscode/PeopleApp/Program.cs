@@ -87,3 +87,40 @@ WriteLine(format: "Key {0} has a value: {1}",
     arg1: lookupIntString[key]);
 
 #endregion
+
+#region Raising and handling events
+// Assign the method(s) to the Shout delegate
+harry.Shout += Harry_Shout;
+harry.Shout += Harry_Shout_2;
+
+// Call the Poke method that eventually raises the Shout event.
+harry.Poke();
+harry.Poke();
+harry.Poke();
+harry.Poke();
+
+#endregion
+
+#region Implementing interfaces
+// Comparing objects when sorting
+Person?[] people =
+{
+    null,
+    new() {Name = "Simon"},
+    new() {Name = "Jenny"},
+    new() {Name = "Adam"},
+    new() {Name = null},
+    new() {Name = "Richard"}
+};
+
+OutputPeopleNames(people, "Initial list of people:");
+
+Array.Sort(people);
+
+OutputPeopleNames(people, "After sorting using Person's IComparable implementation:");
+
+Array.Sort(people, new PersonComparer());
+
+OutputPeopleNames(people, "After sorting using PersonComparer's IComparer implementation:");
+
+#endregion

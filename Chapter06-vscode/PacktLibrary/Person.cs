@@ -1,6 +1,6 @@
 ﻿namespace Packt.Shared;
 
-public class Person
+public class Person : IComparable<Person?>
 {
     #region Properties
 
@@ -122,5 +122,79 @@ public class Person
         //Return a reference to the baby that results from multiplying.
         return Procreate(p1, p2);
     }
+    #endregion
+
+    #region Events
+
+    // Delegate field to define the event.
+    public event EventHandler? Shout; // null initially
+
+    //Data field related to the event.
+    public int AngerLevel;
+
+    // Method to trigger the event in certain conditions.
+    public void Poke()
+    {
+        AngerLevel++;
+
+        if (AngerLevel < 3) return;
+
+        // If something is listening to the event...
+        if (Shout is not null)
+        {
+            // ...then call the delegate to "raise" the event.
+            Shout(this, EventArgs.Empty);
+        }
+    }
+
+    public int CompareToOld(Person? other)
+    {
+        int position;
+
+        if (other is not null)
+        {
+            if ((Name is not null) && (other.Name is not null))
+            {
+                // If both Name values are not null, then use the string implementation
+                // of CompareTo.
+                position = Name.CompareTo(other.Name);
+            }
+            else if ((Name is not null) && (other.Name is null))
+            {
+                position = -1; // this Person precedes other Person.
+            }
+            else if ((Name is null) && (other.Name is not null))
+            {
+                position = 1; // ThisPerson follows other Person
+            }
+            else // Name and other.Name are both null.
+            {
+                position = 0; // this and other are at same position.
+            }
+        }
+        else if (other is null)
+        {
+            position = -1; // this Person precedes other Person
+        }
+        else // this and other are both null
+        {
+            position = 0; // this and other are at some position.
+        }
+        return position;
+    }
+
+    //Re-do the CompareTo function as a switch expression
+    public int CompareTo(Person? other) => (this, other) switch
+    {
+        (Person p1, Person p2) => (p1.Name, p2.Name) switch
+        {
+            (string name1, string name2) => name1.CompareTo(name2),
+            (string, null) => -1,
+            (null, string) => 1,
+            (_, _) => 0
+        },
+        (Person, null) => -1,
+        (_, _) => 0
+    };
     #endregion
 }
