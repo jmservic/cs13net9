@@ -103,6 +103,18 @@ public class Person : IComparable<Person?>
         return Procreate(this, partner);
     }
 
+    public void TimeTravel(DateTime when)
+    {
+        if (when <= Born)
+        {
+            throw new PersonException("If you travel back in time to a date earlier than your own birth, then the universe will explode!");
+        }
+        else
+        {
+            WriteLine($"Welcome to {when:yyyy}!");
+        }
+    }
+
     #endregion
 
     #region Operators
@@ -146,7 +158,7 @@ public class Person : IComparable<Person?>
             Shout(this, EventArgs.Empty);
         }
     }
-
+    #endregion
     public int CompareToOld(Person? other)
     {
         int position;
@@ -196,5 +208,12 @@ public class Person : IComparable<Person?>
         (Person, null) => -1,
         (_, _) => 0
     };
+
+    #region Overriden methods
+
+    public override string ToString()
+    {
+        return $"{Name} is a {base.ToString()}.";
+    }
     #endregion
 }
