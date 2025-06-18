@@ -201,3 +201,20 @@ WriteLine("{0} is a valid e-mail address: {1}",
 arg0: email2,
 arg1: email2.IsValidEmail());
 #endregion
+
+#region Summarizing custom type choices
+C1 c1 = new() { Name = "Bob" };
+c1.Name = "Bill";
+
+C2 c2 = new(Name: "Bob");
+//c2.Name = "Bill"; // CS8852: Init-only property
+
+S1 s1 = new() { Name = "Bob" };
+s1.Name = "Bill";
+
+S2 s2 = new(Name: "Bob");
+s2.Name = "Bill";
+
+S3 s3 = new(Name: "Bob");
+//s3.Name = "Bill"; // CS8852: Init-only property
+#endregion
