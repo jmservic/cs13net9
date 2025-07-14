@@ -5,7 +5,7 @@
     <LangVersion>12</LangVersion>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageId>Jservice.Packt.CSdotnet.SharedLibrary</PackageId>
-    <PackageVersion>9.0.0.0</PackageVersion>
+    <PackageVersion>9.0.0.1</PackageVersion>
     <Title>C# 13 and .NET 9 Shared Library</Title>
     <Authors>Mark J Price, Jonathan Service</Authors>
     <PackageLicenseExpression>

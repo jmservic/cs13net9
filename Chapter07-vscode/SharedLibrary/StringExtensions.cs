@@ -15,4 +15,10 @@ public static class StringExtensions
         // Minmum of eight valid characters.
         return Regex.IsMatch(input, "^[a-zA-Z9-9_-]{8,}$");
     }
+
+    public static bool IsValidHex(this string input)
+    {
+        // Three or six valid hex number characters.
+        return Regex.IsMatch(input, "^#?([a-fA-F0-9]{3}|[a-fA-F0-9]{6})");
+    }
 }
