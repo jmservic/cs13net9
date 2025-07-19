@@ -16,5 +16,6 @@
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
     <PackageReference Include="Jservice.Packt.CSdotnet.SharedLibrary" Version="9.0.0.1" />
+    <PackageReference Include="dialectsoftware.collections.matrix" Version="1.0.0" />
   </ItemGroup>
 </Project>
