@@ -71,3 +71,7 @@ finally
 }
 
 OutputFileInfo(xmlFile);
+
+SectionTitle("Compressing streams");
+Compress(algorithm: "gzip");
+Compress(algorithm: "brotli");
