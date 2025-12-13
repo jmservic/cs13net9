@@ -26,6 +26,8 @@ public class NorthwindDb : DbContext
             .EnableDetailedErrors()
         #endif
         ;
+
+        optionsBuilder.UseLazyLoadingProxies();
     }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -45,5 +47,8 @@ public class NorthwindDb : DbContext
             .Property(product => product.Cost)
             .HasConversion<double>();
         }
+
+        // A global filter to remove discontinued products.
+        modelBuilder.Entity<Product>().HasQueryFilter(p => !p.Discontinued);
     }
 }

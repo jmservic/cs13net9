@@ -4,11 +4,15 @@
 //WriteLine($"Provider: {db.Database.ProviderName}");
 // Disposes the database context.
 
-//ConfigureConsole();
-//QueryingCategories();
+ConfigureConsole();
+QueryingCategories();
 
 //FilteredIncludes();
 
 //QueryingProducts();
 
-GettingOneProduct();
+//GettingOneProduct();
+
+//QueryingWithLike();
+
+//GetProductUsingSql();

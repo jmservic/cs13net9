@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore; // To use Include method.
+﻿using Microsoft.EntityFrameworkCore.ChangeTracking; // To use ColletionEntry.
+using Microsoft.EntityFrameworkCore; // To use Include method.
 using Northwind.EntityModels; // To use Northwind, Cateogry, Product
 
 partial class Program
@@ -11,12 +12,32 @@ partial class Program
 
         // A query to get all categories and their related products.
         // This is a query definition. nothing has executed against the database.
-        IQueryable<Category>? categories = db.Categories?.Include(c => c.Products);
+        IQueryable<Category>? categories; 
+        //= db.Categories;
+        // //?.Include(c => c.Products);
+
+        db.ChangeTracker.LazyLoadingEnabled = false;
+
+        Write("Enable eager loading? (Y/N): ");
+        bool eagerLoading = (ReadKey().Key == ConsoleKey.Y);
+        bool explicitLoading = false;
+        WriteLine();
+
+        if (eagerLoading)
+        {
+            categories = db.Categories?.Include(c => c.Products);
+        } else
+        {
+            categories = db.Categories;
+            Write("Eanble explicit loading? (Y/N): ");
+            explicitLoading = (ReadKey().Key == ConsoleKey.Y);
+            WriteLine();
+        }
 
         // You could call any of the following LINQ methods and nothing will be executed against the datbase:
             // Where, GroupBy, Select, SelectMany, OfType, OrderBy, ThenBy, Join, GroupJoin, Take, Skip, Reverse.
             // Usually, mehtods that return IEnumerable or IQueryable support deferred execution.
-            // Usually, methods that return a signle value do not support deferred execution.
+            // Usually, methods that return a single value do not support deferred execution.
         
         if (categories is null || !categories.Any())
         {
@@ -28,6 +49,20 @@ partial class Program
         // Execute query and enumerate results.
         foreach (Category c in categories)
         {
+            if (explicitLoading)
+            {
+                Write($"Explicitly load products for {c.CategoryName}? (Y/N): ");
+                ConsoleKeyInfo key = ReadKey();
+                WriteLine();
+
+                if (key.Key == ConsoleKey.Y)
+                {
+                    CollectionEntry<Category, Product> products =
+                    db.Entry(c).Collection(c2 => c2.Products);
+
+                    if (!products.IsLoaded) products.Load();
+                }
+            }
             WriteLine($"{c.CategoryName} has {c.Products.Count} products.");
         }
     }
@@ -136,5 +171,62 @@ partial class Program
         Info($"Single: {product?.ProductName}");
 
         if (product is null) Fail ("No product found using Single.");
+    }
+
+    private static void QueryingWithLike()
+    {
+        using NorthwindDb db = new();
+
+        SectionTitle("Pattern matching with LIKE");
+
+        Write("Enter part of a product name: ");
+        string? input = ReadLine();
+
+        if (string.IsNullOrWhiteSpace(input))
+        {
+            Fail("You did not enter part of a product name.");
+            return;
+        }
+
+        IQueryable<Product>? products = db.Products?.Where(p => EF.Functions.Like(p.ProductName, $"%{input}%"));
+
+        if (products is null || !products.Any())
+        {
+            Fail("No products found.");
+            return;
+        }
+
+        foreach (Product p in products)
+        {
+            WriteLine("{0} has {1} units in stock. Discontinued: {2}", p.ProductName, p.Stock, p.Discontinued);
+        }
+    }
+
+    private static void GetProductUsingSql()
+    {
+        using NorthwindDb db = new();
+
+        SectionTitle("Get product using SQL");
+
+        int? rowCount = db.Products?.Count();
+
+        if (rowCount is null)
+        {
+            Fail("Products table is empty.");
+            return;
+        }
+
+        int productId = 1;
+
+        Product? p = db.Products?.FromSql(
+            $"SELECT * FROM Products WHERE ProductId = {productId}").FirstOrDefault();
+        
+        if (p is null)
+        {
+            Fail("Product not found.");
+            return;
+        }
+
+        WriteLine($"Product: {p.ProductId} - {p.ProductName}");
     }
 }
