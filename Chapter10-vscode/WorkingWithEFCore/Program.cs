@@ -5,7 +5,8 @@
 // Disposes the database context.
 
 ConfigureConsole();
-QueryingCategories();
+LazyLoadingWithNoTracking();
+//QueryingCategories();
 
 //FilteredIncludes();
 
