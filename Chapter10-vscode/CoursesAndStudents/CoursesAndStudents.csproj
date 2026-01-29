@@ -15,4 +15,8 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="9.0.12" />
   </ItemGroup>
 
+  <ItemGroup>
+   <Using Include="System.Console" Static="true"/>  
+  </ItemGroup>
+
 </Project>
