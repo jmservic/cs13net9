@@ -11,4 +11,20 @@ using (Academy a = new())
 
     WriteLine("SQL script used to create database:");
     WriteLine(a.Database.GenerateCreateScript());
+
+    if (a.Students is null)
+        return;
+
+    foreach (Student s in a.Students.Include(s => s.Courses))
+    {
+        WriteLine("{0} {1} attends the following {2} courses:", s.FirstName, s.LastName, s.Courses?.Count());
+
+        if (s.Courses is null)
+            continue;
+
+        foreach (Course c in s.Courses)
+        {
+            WriteLine($"  {c.Title}");            
+        }
+    }
 }
