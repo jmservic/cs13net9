@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Northwind.EntityModels", "N
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoursesAndStudents", "CoursesAndStudents\CoursesAndStudents.csproj", "{E334BB80-CEB8-40BD-A330-E1B85B97C9F4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise_DataSerialization", "Exercise_DataSerialization\Exercise_DataSerialization.csproj", "{D7433674-FEF7-45F1-BDCD-9260F3FF9897}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -55,6 +57,18 @@ Global
 		{E334BB80-CEB8-40BD-A330-E1B85B97C9F4}.Release|x64.Build.0 = Release|Any CPU
 		{E334BB80-CEB8-40BD-A330-E1B85B97C9F4}.Release|x86.ActiveCfg = Release|Any CPU
 		{E334BB80-CEB8-40BD-A330-E1B85B97C9F4}.Release|x86.Build.0 = Release|Any CPU
+		{D7433674-FEF7-45F1-BDCD-9260F3FF9897}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7433674-FEF7-45F1-BDCD-9260F3FF9897}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7433674-FEF7-45F1-BDCD-9260F3FF9897}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{D7433674-FEF7-45F1-BDCD-9260F3FF9897}.Debug|x64.Build.0 = Debug|Any CPU
+		{D7433674-FEF7-45F1-BDCD-9260F3FF9897}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{D7433674-FEF7-45F1-BDCD-9260F3FF9897}.Debug|x86.Build.0 = Debug|Any CPU
+		{D7433674-FEF7-45F1-BDCD-9260F3FF9897}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7433674-FEF7-45F1-BDCD-9260F3FF9897}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7433674-FEF7-45F1-BDCD-9260F3FF9897}.Release|x64.ActiveCfg = Release|Any CPU
+		{D7433674-FEF7-45F1-BDCD-9260F3FF9897}.Release|x64.Build.0 = Release|Any CPU
+		{D7433674-FEF7-45F1-BDCD-9260F3FF9897}.Release|x86.ActiveCfg = Release|Any CPU
+		{D7433674-FEF7-45F1-BDCD-9260F3FF9897}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

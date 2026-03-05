@@ -1,0 +1,942 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfCategory xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Category>
+    <CategoryId>1</CategoryId>
+    <CategoryName>Beverages</CategoryName>
+    <Description>Soft drinks, coffees, teas, beers, and ales</Description>
+  </Category>
+  <Category>
+    <CategoryId>2</CategoryId>
+    <CategoryName>Condiments</CategoryName>
+    <Description>Sweet and savory sauces, relishes, spreads, and seasonings</Description>
+  </Category>
+  <Category>
+    <CategoryId>3</CategoryId>
+    <CategoryName>Confections</CategoryName>
+    <Description>Desserts, candies, and sweet breads</Description>
+  </Category>
+  <Category>
+    <CategoryId>4</CategoryId>
+    <CategoryName>Dairy Products</CategoryName>
+    <Description>Cheeses</Description>
+  </Category>
+  <Category>
+    <CategoryId>5</CategoryId>
+    <CategoryName>Grains/Cereals</CategoryName>
+    <Description>Breads, crackers, pasta, and cereal</Description>
+  </Category>
+  <Category>
+    <CategoryId>6</CategoryId>
+    <CategoryName>Meat/Poultry</CategoryName>
+    <Description>Prepared meats</Description>
+  </Category>
+  <Category>
+    <CategoryId>7</CategoryId>
+    <CategoryName>Produce</CategoryName>
+    <Description>Dried fruit and bean curd</Description>
+  </Category>
+  <Category>
+    <CategoryId>8</CategoryId>
+    <CategoryName>Seafood</CategoryName>
+    <Description>Seaweed and fish</Description>
+  </Category>
+</ArrayOfCategory><?xml version="1.0" encoding="utf-8"?>
+<ArrayOfProduct xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Product>
+    <ProductId>1</ProductId>
+    <ProductName>Chai</ProductName>
+    <Cost>18</Cost>
+    <Stock>39</Stock>
+    <Discontinued>false</Discontinued>
+    <CategoryId>1</CategoryId>
+    <Category>
+      <CategoryId>1</CategoryId>
+      <CategoryName>Beverages</CategoryName>
+      <Description>Soft drinks, coffees, teas, beers, and ales</Description>
+    </Category>
+  </Product>
+  <Product>
+    <ProductId>2</ProductId>
+    <ProductName>Chang</ProductName>
+    <Cost>19</Cost>
+    <Stock>17</Stock>
+    <Discontinued>false</Discontinued>
+    <CategoryId>1</CategoryId>
+    <Category>
+      <CategoryId>1</CategoryId>
+      <CategoryName>Beverages</CategoryName>
+      <Description>Soft drinks, coffees, teas, beers, and ales</Description>
+    </Category>
+  </Product>
+  <Product>
+    <ProductId>3</ProductId>
+    <ProductName>Aniseed Syrup</ProductName>
+    <Cost>10</Cost>
+    <Stock>13</Stock>
+    <Discontinued>false</Discontinued>
+    <CategoryId>2</CategoryId>
+    <Category>
+      <CategoryId>2</CategoryId>
+      <CategoryName>Condiments</CategoryName>
+      <Description>Sweet and savory sauces, relishes, spreads, and seasonings</Description>
+    </Category>
+  </Product>
+  <Product>
+    <ProductId>4</ProductId>
+    <ProductName>Chef Anton's Cajun Seasoning</ProductName>
+    <Cost>22</Cost>
+    <Stock>53</Stock>
+    <Discontinued>false</Discontinued>
+    <CategoryId>2</CategoryId>
+    <Category>
+      <CategoryId>2</CategoryId>
+      <CategoryName>Condiments</CategoryName>
+      <Description>Sweet and savory sauces, relishes, spreads, and seasonings</Description>
+    </Category>
+  </Product>
+  <Product>
+    <ProductId>6</ProductId>
+    <ProductName>Grandma's Boysenberry Spread</ProductName>
+    <Cost>25</Cost>
+    <Stock>120</Stock>
+    <Discontinued>false</Discontinued>
+    <CategoryId>2</CategoryId>
+    <Category>
+      <CategoryId>2</CategoryId>
+      <CategoryName>Condiments</CategoryName>
+      <Description>Sweet and savory sauces, relishes, spreads, and seasonings</Description>
+    </Category>
+  </Product>
+  <Product>
+    <ProductId>7</ProductId>
+    <ProductName>Uncle Bob's Organic Dried Pears</ProductName>
+    <Cost>30</Cost>
+    <Stock>15</Stock>
+    <Discontinued>false</Discontinued>
+    <CategoryId>7</CategoryId>
+    <Category>
+      <CategoryId>7</CategoryId>
+      <CategoryName>Produce</CategoryName>
+      <Description>Dried fruit and bean curd</Description>
+    </Category>
+  </Product>
+  <Product>
+    <ProductId>8</ProductId>
+    <ProductName>Northwoods Cranberry Sauce</ProductName>
+    <Cost>40</Cost>
+    <Stock>6</Stock>
+    <Discontinued>false</Discontinued>
+    <CategoryId>2</CategoryId>
+    <Category>
+      <CategoryId>2</CategoryId>
+      <CategoryName>Condiments</CategoryName>
+      <Description>Sweet and savory sauces, relishes, spreads, and seasonings</Description>
+    </Category>
+  </Product>
+  <Product>
+    <ProductId>10</ProductId>
+    <ProductName>Ikura</ProductName>
+    <Cost>31</Cost>
+    <Stock>31</Stock>
+    <Discontinued>false</Discontinued>
+    <CategoryId>8</CategoryId>
+    <Category>
+      <CategoryId>8</CategoryId>
+      <CategoryName>Seafood</CategoryName>
+      <Description>Seaweed and fish</Description>
+    </Category>
+  </Product>
+  <Product>
+    <ProductId>11</ProductId>
+    <ProductName>Queso Cabrales</ProductName>
+    <Cost>21</Cost>
+    <Stock>22</Stock>
+    <Discontinued>false</Discontinued>
+    <CategoryId>4</CategoryId>
+    <Category>
+      <CategoryId>4</CategoryId>
+      <CategoryName>Dairy Products</CategoryName>
+      <Description>Cheeses</Description>
+    </Category>
+  </Product>
+  <Product>
+    <ProductId>12</ProductId>
+    <ProductName>Queso Manchego La Pastora</ProductName>
+    <Cost>38</Cost>
+    <Stock>86</Stock>
+    <Discontinued>false</Discontinued>
+    <CategoryId>4</CategoryId>
+    <Category>
+      <CategoryId>4</CategoryId>
+      <CategoryName>Dairy Products</CategoryName>
+      <Description>Cheeses</Description>
+    </Category>
+  </Product>
+  <Product>
+    <ProductId>13</ProductId>
+    <ProductName>Konbu</ProductName>
+    <Cost>6</Cost>
+    <Stock>24</Stock>
+    <Discontinued>false</Discontinued>
+    <CategoryId>8</CategoryId>
+    <Category>
+      <CategoryId>8</CategoryId>
+      <CategoryName>Seafood</CategoryName>
+      <Description>Seaweed and fish</Description>
+    </Category>
+  </Product>
+  <Product>
+    <ProductId>14</ProductId>
+    <ProductName>Tofu</ProductName>
+    <Cost>23.25</Cost>
+    <Stock>35</Stock>
+    <Discontinued>false</Discontinued>
+    <CategoryId>7</CategoryId>
+    <Category>
+      <CategoryId>7</CategoryId>
+      <CategoryName>Produce</CategoryName>
+      <Description>Dried fruit and bean curd</Description>
+    </Category>
+  </Product>
+  <Product>
+    <ProductId>15</ProductId>
+    <ProductName>Genen Shouyu</ProductName>
+    <Cost>15.5</Cost>
+    <Stock>39</Stock>
+    <Discontinued>false</Discontinued>
+    <CategoryId>2</CategoryId>
+    <Category>
+      <CategoryId>2</CategoryId>
+      <CategoryName>Condiments</CategoryName>
+      <Description>Sweet and savory sauces, relishes, spreads, and seasonings</Description>
+    </Category>
+  </Product>
+  <Product>
+    <ProductId>16</ProductId>
+    <ProductName>Pavlova</ProductName>
+    <Cost>17.45</Cost>
+    <Stock>29</Stock>
+    <Discontinued>false</Discontinued>
+    <CategoryId>3</CategoryId>
+    <Category>
+      <CategoryId>3</CategoryId>
+      <CategoryName>Confections</CategoryName>
+      <Description>Desserts, candies, and sweet breads</Description>
+    </Category>
+  </Product>
+  <Product>
+    <ProductId>18</ProductId>
+    <ProductName>Carnarvon Tigers</ProductName>
+    <Cost>62.5</Cost>
+    <Stock>42</Stock>
+    <Discontinued>false</Discontinued>
+    <CategoryId>8</CategoryId>
+    <Category>
+      <CategoryId>8</CategoryId>
+      <CategoryName>Seafood</CategoryName>
+      <Description>Seaweed and fish</Description>
+    </Category>
+  </Product>
+  <Product>
+    <ProductId>19</ProductId>
+    <ProductName>Teatime Chocolate Biscuits</ProductName>
+    <Cost>9.2</Cost>
+    <Stock>25</Stock>
+    <Discontinued>false</Discontinued>
+    <CategoryId>3</CategoryId>
+    <Category>
+      <CategoryId>3</CategoryId>
+      <CategoryName>Confections</CategoryName>
+      <Description>Desserts, candies, and sweet breads</Description>
+    </Category>
+  </Product>
+  <Product>
+    <ProductId>20</ProductId>
+    <ProductName>Sir Rodney's Marmalade</ProductName>
+    <Cost>81</Cost>
+    <Stock>40</Stock>
+    <Discontinued>false</Discontinued>
+    <CategoryId>3</CategoryId>
+    <Category>
+      <CategoryId>3</CategoryId>
+      <CategoryName>Confections</CategoryName>
+      <Description>Desserts, candies, and sweet breads</Description>
+    </Category>
+  </Product>
+  <Product>
+    <ProductId>21</ProductId>
+    <ProductName>Sir Rodney's Scones</ProductName>
+    <Cost>10</Cost>
+    <Stock>3</Stock>
+    <Discontinued>false</Discontinued>
+    <CategoryId>3</CategoryId>
+    <Category>
+      <CategoryId>3</CategoryId>
+      <CategoryName>Confections</CategoryName>
+      <Description>Desserts, candies, and sweet breads</Description>
+    </Category>
+  </Product>
+  <Product>
+    <ProductId>22</ProductId>
+    <ProductName>Gustaf's Knäckebröd</ProductName>
+    <Cost>21</Cost>
+    <Stock>104</Stock>
+    <Discontinued>false</Discontinued>
+    <CategoryId>5</CategoryId>
+    <Category>
+      <CategoryId>5</CategoryId>
+      <CategoryName>Grains/Cereals</CategoryName>
+      <Description>Breads, crackers, pasta, and cereal</Description>
+    </Category>
+  </Product>
+  <Product>
+    <ProductId>23</ProductId>
+    <ProductName>Tunnbröd</ProductName>
+    <Cost>9</Cost>
+    <Stock>61</Stock>
+    <Discontinued>false</Discontinued>
+    <CategoryId>5</CategoryId>
+    <Category>
+      <CategoryId>5</CategoryId>
+      <CategoryName>Grains/Cereals</CategoryName>
+      <Description>Breads, crackers, pasta, and cereal</Description>
+    </Category>
+  </Product>
+  <Product>
+    <ProductId>25</ProductId>
+    <ProductName>NuNuCa Nuß-Nougat-Creme</ProductName>
+    <Cost>14</Cost>
+    <Stock>76</Stock>
+    <Discontinued>false</Discontinued>
+    <CategoryId>3</CategoryId>
+    <Category>
+      <CategoryId>3</CategoryId>
+      <CategoryName>Confections</CategoryName>
+      <Description>Desserts, candies, and sweet breads</Description>
+    </Category>
+  </Product>
+  <Product>
+    <ProductId>26</ProductId>
+    <ProductName>Gumbär Gummibärchen</ProductName>
+    <Cost>31.23</Cost>
+    <Stock>15</Stock>
+    <Discontinued>false</Discontinued>
+    <CategoryId>3</CategoryId>
+    <Category>
+      <CategoryId>3</CategoryId>
+      <CategoryName>Confections</CategoryName>
+      <Description>Desserts, candies, and sweet breads</Description>
+    </Category>
+  </Product>
+  <Product>
+    <ProductId>27</ProductId>
+    <ProductName>Schoggi Schokolade</ProductName>
+    <Cost>43.9</Cost>
+    <Stock>49</Stock>
+    <Discontinued>false</Discontinued>
+    <CategoryId>3</CategoryId>
+    <Category>
+      <CategoryId>3</CategoryId>
+      <CategoryName>Confections</CategoryName>
+      <Description>Desserts, candies, and sweet breads</Description>
+    </Category>
+  </Product>
+  <Product>
+    <ProductId>30</ProductId>
+    <ProductName>Nord-Ost Matjeshering</ProductName>
+    <Cost>25.89</Cost>
+    <Stock>10</Stock>
+    <Discontinued>false</Discontinued>
+    <CategoryId>8</CategoryId>
+    <Category>
+      <CategoryId>8</CategoryId>
+      <CategoryName>Seafood</CategoryName>
+      <Description>Seaweed and fish</Description>
+    </Category>
+  </Product>
+  <Product>
+    <ProductId>31</ProductId>
+    <ProductName>Gorgonzola Telino</ProductName>
+    <Cost>12.5</Cost>
+    <Stock>0</Stock>
+    <Discontinued>false</Discontinued>
+    <CategoryId>4</CategoryId>
+    <Category>
+      <CategoryId>4</CategoryId>
+      <CategoryName>Dairy Products</CategoryName>
+      <Description>Cheeses</Description>
+    </Category>
+  </Product>
+  <Product>
+    <ProductId>32</ProductId>
+    <ProductName>Mascarpone Fabioli</ProductName>
+    <Cost>32</Cost>
+    <Stock>9</Stock>
+    <Discontinued>false</Discontinued>
+    <CategoryId>4</CategoryId>
+    <Category>
+      <CategoryId>4</CategoryId>
+      <CategoryName>Dairy Products</CategoryName>
+      <Description>Cheeses</Description>
+    </Category>
+  </Product>
+  <Product>
+    <ProductId>33</ProductId>
+    <ProductName>Geitost</ProductName>
+    <Cost>2.5</Cost>
+    <Stock>112</Stock>
+    <Discontinued>false</Discontinued>
+    <CategoryId>4</CategoryId>
+    <Category>
+      <CategoryId>4</CategoryId>
+      <CategoryName>Dairy Products</CategoryName>
+      <Description>Cheeses</Description>
+    </Category>
+  </Product>
+  <Product>
+    <ProductId>34</ProductId>
+    <ProductName>Sasquatch Ale</ProductName>
+    <Cost>14</Cost>
+    <Stock>111</Stock>
+    <Discontinued>false</Discontinued>
+    <CategoryId>1</CategoryId>
+    <Category>
+      <CategoryId>1</CategoryId>
+      <CategoryName>Beverages</CategoryName>
+      <Description>Soft drinks, coffees, teas, beers, and ales</Description>
+    </Category>
+  </Product>
+  <Product>
+    <ProductId>35</ProductId>
+    <ProductName>Steeleye Stout</ProductName>
+    <Cost>18</Cost>
+    <Stock>20</Stock>
+    <Discontinued>false</Discontinued>
+    <CategoryId>1</CategoryId>
+    <Category>
+      <CategoryId>1</CategoryId>
+      <CategoryName>Beverages</CategoryName>
+      <Description>Soft drinks, coffees, teas, beers, and ales</Description>
+    </Category>
+  </Product>
+  <Product>
+    <ProductId>36</ProductId>
+    <ProductName>Inlagd Sill</ProductName>
+    <Cost>19</Cost>
+    <Stock>112</Stock>
+    <Discontinued>false</Discontinued>
+    <CategoryId>8</CategoryId>
+    <Category>
+      <CategoryId>8</CategoryId>
+      <CategoryName>Seafood</CategoryName>
+      <Description>Seaweed and fish</Description>
+    </Category>
+  </Product>
+  <Product>
+    <ProductId>37</ProductId>
+    <ProductName>Gravad lax</ProductName>
+    <Cost>26</Cost>
+    <Stock>11</Stock>
+    <Discontinued>false</Discontinued>
+    <CategoryId>8</CategoryId>
+    <Category>
+      <CategoryId>8</CategoryId>
+      <CategoryName>Seafood</CategoryName>
+      <Description>Seaweed and fish</Description>
+    </Category>
+  </Product>
+  <Product>
+    <ProductId>38</ProductId>
+    <ProductName>Côte de Blaye</ProductName>
+    <Cost>263.5</Cost>
+    <Stock>17</Stock>
+    <Discontinued>false</Discontinued>
+    <CategoryId>1</CategoryId>
+    <Category>
+      <CategoryId>1</CategoryId>
+      <CategoryName>Beverages</CategoryName>
+      <Description>Soft drinks, coffees, teas, beers, and ales</Description>
+    </Category>
+  </Product>
+  <Product>
+    <ProductId>39</ProductId>
+    <ProductName>Chartreuse verte</ProductName>
+    <Cost>18</Cost>
+    <Stock>69</Stock>
+    <Discontinued>false</Discontinued>
+    <CategoryId>1</CategoryId>
+    <Category>
+      <CategoryId>1</CategoryId>
+      <CategoryName>Beverages</CategoryName>
+      <Description>Soft drinks, coffees, teas, beers, and ales</Description>
+    </Category>
+  </Product>
+  <Product>
+    <ProductId>40</ProductId>
+    <ProductName>Boston Crab Meat</ProductName>
+    <Cost>18.4</Cost>
+    <Stock>123</Stock>
+    <Discontinued>false</Discontinued>
+    <CategoryId>8</CategoryId>
+    <Category>
+      <CategoryId>8</CategoryId>
+      <CategoryName>Seafood</CategoryName>
+      <Description>Seaweed and fish</Description>
+    </Category>
+  </Product>
+  <Product>
+    <ProductId>41</ProductId>
+    <ProductName>Jack's New England Clam Chowder</ProductName>
+    <Cost>9.65</Cost>
+    <Stock>85</Stock>
+    <Discontinued>false</Discontinued>
+    <CategoryId>8</CategoryId>
+    <Category>
+      <CategoryId>8</CategoryId>
+      <CategoryName>Seafood</CategoryName>
+      <Description>Seaweed and fish</Description>
+    </Category>
+  </Product>
+  <Product>
+    <ProductId>43</ProductId>
+    <ProductName>Ipoh Coffee</ProductName>
+    <Cost>46</Cost>
+    <Stock>17</Stock>
+    <Discontinued>false</Discontinued>
+    <CategoryId>1</CategoryId>
+    <Category>
+      <CategoryId>1</CategoryId>
+      <CategoryName>Beverages</CategoryName>
+      <Description>Soft drinks, coffees, teas, beers, and ales</Description>
+    </Category>
+  </Product>
+  <Product>
+    <ProductId>44</ProductId>
+    <ProductName>Gula Malacca</ProductName>
+    <Cost>19.45</Cost>
+    <Stock>27</Stock>
+    <Discontinued>false</Discontinued>
+    <CategoryId>2</CategoryId>
+    <Category>
+      <CategoryId>2</CategoryId>
+      <CategoryName>Condiments</CategoryName>
+      <Description>Sweet and savory sauces, relishes, spreads, and seasonings</Description>
+    </Category>
+  </Product>
+  <Product>
+    <ProductId>45</ProductId>
+    <ProductName>Rogede sild</ProductName>
+    <Cost>9.5</Cost>
+    <Stock>5</Stock>
+    <Discontinued>false</Discontinued>
+    <CategoryId>8</CategoryId>
+    <Category>
+      <CategoryId>8</CategoryId>
+      <CategoryName>Seafood</CategoryName>
+      <Description>Seaweed and fish</Description>
+    </Category>
+  </Product>
+  <Product>
+    <ProductId>46</ProductId>
+    <ProductName>Spegesild</ProductName>
+    <Cost>12</Cost>
+    <Stock>95</Stock>
+    <Discontinued>false</Discontinued>
+    <CategoryId>8</CategoryId>
+    <Category>
+      <CategoryId>8</CategoryId>
+      <CategoryName>Seafood</CategoryName>
+      <Description>Seaweed and fish</Description>
+    </Category>
+  </Product>
+  <Product>
+    <ProductId>47</ProductId>
+    <ProductName>Zaanse koeken</ProductName>
+    <Cost>9.5</Cost>
+    <Stock>36</Stock>
+    <Discontinued>false</Discontinued>
+    <CategoryId>3</CategoryId>
+    <Category>
+      <CategoryId>3</CategoryId>
+      <CategoryName>Confections</CategoryName>
+      <Description>Desserts, candies, and sweet breads</Description>
+    </Category>
+  </Product>
+  <Product>
+    <ProductId>48</ProductId>
+    <ProductName>Chocolade</ProductName>
+    <Cost>12.75</Cost>
+    <Stock>15</Stock>
+    <Discontinued>false</Discontinued>
+    <CategoryId>3</CategoryId>
+    <Category>
+      <CategoryId>3</CategoryId>
+      <CategoryName>Confections</CategoryName>
+      <Description>Desserts, candies, and sweet breads</Description>
+    </Category>
+  </Product>
+  <Product>
+    <ProductId>49</ProductId>
+    <ProductName>Maxilaku</ProductName>
+    <Cost>20</Cost>
+    <Stock>10</Stock>
+    <Discontinued>false</Discontinued>
+    <CategoryId>3</CategoryId>
+    <Category>
+      <CategoryId>3</CategoryId>
+      <CategoryName>Confections</CategoryName>
+      <Description>Desserts, candies, and sweet breads</Description>
+    </Category>
+  </Product>
+  <Product>
+    <ProductId>50</ProductId>
+    <ProductName>Valkoinen suklaa</ProductName>
+    <Cost>16.25</Cost>
+    <Stock>65</Stock>
+    <Discontinued>false</Discontinued>
+    <CategoryId>3</CategoryId>
+    <Category>
+      <CategoryId>3</CategoryId>
+      <CategoryName>Confections</CategoryName>
+      <Description>Desserts, candies, and sweet breads</Description>
+    </Category>
+  </Product>
+  <Product>
+    <ProductId>51</ProductId>
+    <ProductName>Manjimup Dried Apples</ProductName>
+    <Cost>53</Cost>
+    <Stock>20</Stock>
+    <Discontinued>false</Discontinued>
+    <CategoryId>7</CategoryId>
+    <Category>
+      <CategoryId>7</CategoryId>
+      <CategoryName>Produce</CategoryName>
+      <Description>Dried fruit and bean curd</Description>
+    </Category>
+  </Product>
+  <Product>
+    <ProductId>52</ProductId>
+    <ProductName>Filo Mix</ProductName>
+    <Cost>7</Cost>
+    <Stock>38</Stock>
+    <Discontinued>false</Discontinued>
+    <CategoryId>5</CategoryId>
+    <Category>
+      <CategoryId>5</CategoryId>
+      <CategoryName>Grains/Cereals</CategoryName>
+      <Description>Breads, crackers, pasta, and cereal</Description>
+    </Category>
+  </Product>
+  <Product>
+    <ProductId>54</ProductId>
+    <ProductName>Tourtière</ProductName>
+    <Cost>7.45</Cost>
+    <Stock>21</Stock>
+    <Discontinued>false</Discontinued>
+    <CategoryId>6</CategoryId>
+    <Category>
+      <CategoryId>6</CategoryId>
+      <CategoryName>Meat/Poultry</CategoryName>
+      <Description>Prepared meats</Description>
+    </Category>
+  </Product>
+  <Product>
+    <ProductId>55</ProductId>
+    <ProductName>Pâté chinois</ProductName>
+    <Cost>24</Cost>
+    <Stock>115</Stock>
+    <Discontinued>false</Discontinued>
+    <CategoryId>6</CategoryId>
+    <Category>
+      <CategoryId>6</CategoryId>
+      <CategoryName>Meat/Poultry</CategoryName>
+      <Description>Prepared meats</Description>
+    </Category>
+  </Product>
+  <Product>
+    <ProductId>56</ProductId>
+    <ProductName>Gnocchi di nonna Alice</ProductName>
+    <Cost>38</Cost>
+    <Stock>21</Stock>
+    <Discontinued>false</Discontinued>
+    <CategoryId>5</CategoryId>
+    <Category>
+      <CategoryId>5</CategoryId>
+      <CategoryName>Grains/Cereals</CategoryName>
+      <Description>Breads, crackers, pasta, and cereal</Description>
+    </Category>
+  </Product>
+  <Product>
+    <ProductId>57</ProductId>
+    <ProductName>Ravioli Angelo</ProductName>
+    <Cost>19.5</Cost>
+    <Stock>36</Stock>
+    <Discontinued>false</Discontinued>
+    <CategoryId>5</CategoryId>
+    <Category>
+      <CategoryId>5</CategoryId>
+      <CategoryName>Grains/Cereals</CategoryName>
+      <Description>Breads, crackers, pasta, and cereal</Description>
+    </Category>
+  </Product>
+  <Product>
+    <ProductId>58</ProductId>
+    <ProductName>Escargots de Bourgogne</ProductName>
+    <Cost>13.25</Cost>
+    <Stock>62</Stock>
+    <Discontinued>false</Discontinued>
+    <CategoryId>8</CategoryId>
+    <Category>
+      <CategoryId>8</CategoryId>
+      <CategoryName>Seafood</CategoryName>
+      <Description>Seaweed and fish</Description>
+    </Category>
+  </Product>
+  <Product>
+    <ProductId>59</ProductId>
+    <ProductName>Raclette Courdavault</ProductName>
+    <Cost>55</Cost>
+    <Stock>79</Stock>
+    <Discontinued>false</Discontinued>
+    <CategoryId>4</CategoryId>
+    <Category>
+      <CategoryId>4</CategoryId>
+      <CategoryName>Dairy Products</CategoryName>
+      <Description>Cheeses</Description>
+    </Category>
+  </Product>
+  <Product>
+    <ProductId>60</ProductId>
+    <ProductName>Camembert Pierrot</ProductName>
+    <Cost>34</Cost>
+    <Stock>19</Stock>
+    <Discontinued>false</Discontinued>
+    <CategoryId>4</CategoryId>
+    <Category>
+      <CategoryId>4</CategoryId>
+      <CategoryName>Dairy Products</CategoryName>
+      <Description>Cheeses</Description>
+    </Category>
+  </Product>
+  <Product>
+    <ProductId>61</ProductId>
+    <ProductName>Sirop d'érable</ProductName>
+    <Cost>28.5</Cost>
+    <Stock>113</Stock>
+    <Discontinued>false</Discontinued>
+    <CategoryId>2</CategoryId>
+    <Category>
+      <CategoryId>2</CategoryId>
+      <CategoryName>Condiments</CategoryName>
+      <Description>Sweet and savory sauces, relishes, spreads, and seasonings</Description>
+    </Category>
+  </Product>
+  <Product>
+    <ProductId>62</ProductId>
+    <ProductName>Tarte au sucre</ProductName>
+    <Cost>49.3</Cost>
+    <Stock>17</Stock>
+    <Discontinued>false</Discontinued>
+    <CategoryId>3</CategoryId>
+    <Category>
+      <CategoryId>3</CategoryId>
+      <CategoryName>Confections</CategoryName>
+      <Description>Desserts, candies, and sweet breads</Description>
+    </Category>
+  </Product>
+  <Product>
+    <ProductId>63</ProductId>
+    <ProductName>Vegie-spread</ProductName>
+    <Cost>43.9</Cost>
+    <Stock>24</Stock>
+    <Discontinued>false</Discontinued>
+    <CategoryId>2</CategoryId>
+    <Category>
+      <CategoryId>2</CategoryId>
+      <CategoryName>Condiments</CategoryName>
+      <Description>Sweet and savory sauces, relishes, spreads, and seasonings</Description>
+    </Category>
+  </Product>
+  <Product>
+    <ProductId>64</ProductId>
+    <ProductName>Wimmers gute Semmelknödel</ProductName>
+    <Cost>33.25</Cost>
+    <Stock>22</Stock>
+    <Discontinued>false</Discontinued>
+    <CategoryId>5</CategoryId>
+    <Category>
+      <CategoryId>5</CategoryId>
+      <CategoryName>Grains/Cereals</CategoryName>
+      <Description>Breads, crackers, pasta, and cereal</Description>
+    </Category>
+  </Product>
+  <Product>
+    <ProductId>65</ProductId>
+    <ProductName>Louisiana Fiery Hot Pepper Sauce</ProductName>
+    <Cost>21.05</Cost>
+    <Stock>76</Stock>
+    <Discontinued>false</Discontinued>
+    <CategoryId>2</CategoryId>
+    <Category>
+      <CategoryId>2</CategoryId>
+      <CategoryName>Condiments</CategoryName>
+      <Description>Sweet and savory sauces, relishes, spreads, and seasonings</Description>
+    </Category>
+  </Product>
+  <Product>
+    <ProductId>66</ProductId>
+    <ProductName>Louisiana Hot Spiced Okra</ProductName>
+    <Cost>17</Cost>
+    <Stock>4</Stock>
+    <Discontinued>false</Discontinued>
+    <CategoryId>2</CategoryId>
+    <Category>
+      <CategoryId>2</CategoryId>
+      <CategoryName>Condiments</CategoryName>
+      <Description>Sweet and savory sauces, relishes, spreads, and seasonings</Description>
+    </Category>
+  </Product>
+  <Product>
+    <ProductId>67</ProductId>
+    <ProductName>Laughing Lumberjack Lager</ProductName>
+    <Cost>14</Cost>
+    <Stock>52</Stock>
+    <Discontinued>false</Discontinued>
+    <CategoryId>1</CategoryId>
+    <Category>
+      <CategoryId>1</CategoryId>
+      <CategoryName>Beverages</CategoryName>
+      <Description>Soft drinks, coffees, teas, beers, and ales</Description>
+    </Category>
+  </Product>
+  <Product>
+    <ProductId>68</ProductId>
+    <ProductName>Scottish Longbreads</ProductName>
+    <Cost>12.5</Cost>
+    <Stock>6</Stock>
+    <Discontinued>false</Discontinued>
+    <CategoryId>3</CategoryId>
+    <Category>
+      <CategoryId>3</CategoryId>
+      <CategoryName>Confections</CategoryName>
+      <Description>Desserts, candies, and sweet breads</Description>
+    </Category>
+  </Product>
+  <Product>
+    <ProductId>69</ProductId>
+    <ProductName>Gudbrandsdalsost</ProductName>
+    <Cost>36</Cost>
+    <Stock>26</Stock>
+    <Discontinued>false</Discontinued>
+    <CategoryId>4</CategoryId>
+    <Category>
+      <CategoryId>4</CategoryId>
+      <CategoryName>Dairy Products</CategoryName>
+      <Description>Cheeses</Description>
+    </Category>
+  </Product>
+  <Product>
+    <ProductId>70</ProductId>
+    <ProductName>Outback Lager</ProductName>
+    <Cost>15</Cost>
+    <Stock>15</Stock>
+    <Discontinued>false</Discontinued>
+    <CategoryId>1</CategoryId>
+    <Category>
+      <CategoryId>1</CategoryId>
+      <CategoryName>Beverages</CategoryName>
+      <Description>Soft drinks, coffees, teas, beers, and ales</Description>
+    </Category>
+  </Product>
+  <Product>
+    <ProductId>71</ProductId>
+    <ProductName>Flotemysost</ProductName>
+    <Cost>21.5</Cost>
+    <Stock>26</Stock>
+    <Discontinued>false</Discontinued>
+    <CategoryId>4</CategoryId>
+    <Category>
+      <CategoryId>4</CategoryId>
+      <CategoryName>Dairy Products</CategoryName>
+      <Description>Cheeses</Description>
+    </Category>
+  </Product>
+  <Product>
+    <ProductId>72</ProductId>
+    <ProductName>Mozzarella di Giovanni</ProductName>
+    <Cost>34.8</Cost>
+    <Stock>14</Stock>
+    <Discontinued>false</Discontinued>
+    <CategoryId>4</CategoryId>
+    <Category>
+      <CategoryId>4</CategoryId>
+      <CategoryName>Dairy Products</CategoryName>
+      <Description>Cheeses</Description>
+    </Category>
+  </Product>
+  <Product>
+    <ProductId>73</ProductId>
+    <ProductName>Röd Kaviar</ProductName>
+    <Cost>15</Cost>
+    <Stock>101</Stock>
+    <Discontinued>false</Discontinued>
+    <CategoryId>8</CategoryId>
+    <Category>
+      <CategoryId>8</CategoryId>
+      <CategoryName>Seafood</CategoryName>
+      <Description>Seaweed and fish</Description>
+    </Category>
+  </Product>
+  <Product>
+    <ProductId>74</ProductId>
+    <ProductName>Longlife Tofu</ProductName>
+    <Cost>10</Cost>
+    <Stock>4</Stock>
+    <Discontinued>false</Discontinued>
+    <CategoryId>7</CategoryId>
+    <Category>
+      <CategoryId>7</CategoryId>
+      <CategoryName>Produce</CategoryName>
+      <Description>Dried fruit and bean curd</Description>
+    </Category>
+  </Product>
+  <Product>
+    <ProductId>75</ProductId>
+    <ProductName>Rhönbräu Klosterbier</ProductName>
+    <Cost>7.75</Cost>
+    <Stock>125</Stock>
+    <Discontinued>false</Discontinued>
+    <CategoryId>1</CategoryId>
+    <Category>
+      <CategoryId>1</CategoryId>
+      <CategoryName>Beverages</CategoryName>
+      <Description>Soft drinks, coffees, teas, beers, and ales</Description>
+    </Category>
+  </Product>
+  <Product>
+    <ProductId>76</ProductId>
+    <ProductName>Lakkalikööri</ProductName>
+    <Cost>18</Cost>
+    <Stock>57</Stock>
+    <Discontinued>false</Discontinued>
+    <CategoryId>1</CategoryId>
+    <Category>
+      <CategoryId>1</CategoryId>
+      <CategoryName>Beverages</CategoryName>
+      <Description>Soft drinks, coffees, teas, beers, and ales</Description>
+    </Category>
+  </Product>
+  <Product>
+    <ProductId>77</ProductId>
+    <ProductName>Original Frankfurter grüne Soße</ProductName>
+    <Cost>13</Cost>
+    <Stock>32</Stock>
+    <Discontinued>false</Discontinued>
+    <CategoryId>2</CategoryId>
+    <Category>
+      <CategoryId>2</CategoryId>
+      <CategoryName>Condiments</CategoryName>
+      <Description>Sweet and savory sauces, relishes, spreads, and seasonings</Description>
+    </Category>
+  </Product>
+</ArrayOfProduct>
