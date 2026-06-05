@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PacktLinqExtensions", "Pack
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinqInParallel", "LinqInParallel\LinqInParallel.csproj", "{9FE89040-98D7-4C13-8AF6-CA909ECF2C15}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise_LinqQueries", "Exercise_LinqQueries\Exercise_LinqQueries.csproj", "{CD97B0E9-54F9-4BD9-9B3C-F588ABE5F3AB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +71,18 @@ Global
 		{9FE89040-98D7-4C13-8AF6-CA909ECF2C15}.Release|x64.Build.0 = Release|Any CPU
 		{9FE89040-98D7-4C13-8AF6-CA909ECF2C15}.Release|x86.ActiveCfg = Release|Any CPU
 		{9FE89040-98D7-4C13-8AF6-CA909ECF2C15}.Release|x86.Build.0 = Release|Any CPU
+		{CD97B0E9-54F9-4BD9-9B3C-F588ABE5F3AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD97B0E9-54F9-4BD9-9B3C-F588ABE5F3AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD97B0E9-54F9-4BD9-9B3C-F588ABE5F3AB}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{CD97B0E9-54F9-4BD9-9B3C-F588ABE5F3AB}.Debug|x64.Build.0 = Debug|Any CPU
+		{CD97B0E9-54F9-4BD9-9B3C-F588ABE5F3AB}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{CD97B0E9-54F9-4BD9-9B3C-F588ABE5F3AB}.Debug|x86.Build.0 = Debug|Any CPU
+		{CD97B0E9-54F9-4BD9-9B3C-F588ABE5F3AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD97B0E9-54F9-4BD9-9B3C-F588ABE5F3AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD97B0E9-54F9-4BD9-9B3C-F588ABE5F3AB}.Release|x64.ActiveCfg = Release|Any CPU
+		{CD97B0E9-54F9-4BD9-9B3C-F588ABE5F3AB}.Release|x64.Build.0 = Release|Any CPU
+		{CD97B0E9-54F9-4BD9-9B3C-F588ABE5F3AB}.Release|x86.ActiveCfg = Release|Any CPU
+		{CD97B0E9-54F9-4BD9-9B3C-F588ABE5F3AB}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
